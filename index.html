@@ -9,8 +9,9 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: url("https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dldHR5aW1hZ2VzLTU0MTM4NTg1Ni5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH0sInRvRm9ybWF0IjoiYXZpZiJ9fQ==") no-repeat center center fixed;
+      background: url("Galaxy.png") repeat;
       background-size: cover;
+      animation: moveGalaxy 60s linear infinite;
       color: #c5c6c7;
       display: flex;
       justify-content: center;
@@ -18,6 +19,11 @@
       min-height: 100vh;
       text-align: center;
       padding: 20px;
+    }
+
+    @keyframes moveGalaxy {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 1000px; }
     }
 
     .container {
@@ -52,7 +58,7 @@
 </head>
 <body>
   <div class="container">
-    <h1> Meetup Notice</h1>
+    <h1>🌌 Meetup Notice</h1>
     <p><span class="highlight">Date:</span> 16 April 2026</p>
     <p><span class="highlight">Meetup Time:</span> 12:30 PM at Brainforest</p>
     <p><span class="highlight">Lunch:</span> 1:00 PM</p>
